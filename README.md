@@ -7,7 +7,7 @@
 
 
 ### Intro ###
-MessageBox is a simple concept for decoupling entities. Think of it as notifications but lazy.
+MessageBox is a simple concept for decoupling entities. Think of it as notifications but the opposite.
 
 * For example entity A can place a message that entity B can read whenever suitable – not at once like notifications.
 * A view controller would like to talk to another view controller, but you don't want to create a strong or weak relationship.
