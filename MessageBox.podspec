@@ -11,16 +11,16 @@ MessageBox is a simple concept for decoupling entities. Think of it as notificat
 DESC
 
   s.homepage     = "https://github.com/MKGitHub/MessageBox-Concept"
-  s.screenshots  = "https://github.com/MKGitHub/MessageBox-Concept/blob/master/MessageBox.png"
+  s.screenshots  = "https://raw.githubusercontent.com/MKGitHub/MessageBox-Concept/master/MessageBox.png"
 
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE.txt" }
 
   s.author             = { "Mohsan Khan" => "git.mk@xybernic.com" }
 
-  s.osx.deployment_target = ""
-  s.ios.deployment_target = ""
-  s.tvos.deployment_target = ""
-  s.watchos.deployment_target = "" 
+  s.osx.deployment_target = "10.11"
+  s.ios.deployment_target = "9.0"
+  s.tvos.deployment_target = "9.0"
+  s.watchos.deployment_target = "2.0" 
 
   s.source       = { :git => "https://github.com/MKGitHub/MessageBox-Concept.git", :tag => "#{s.version}" }
 
