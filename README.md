@@ -1,6 +1,12 @@
 ### Intro ###
 MessageBox is a simple concept for decoupling entities. Think of it as notifications but lazy.
+
 For example entity A can place a message that entity B can read whenever suitable – not at once like notifications.
+
+![Image of MessageBox-Concept](https://github.com/MKGitHub/MessageBox-Concept/blob/master/MessageBox.png)
+
+
+
 
 ### Example Usage ###
     private let box:MessageBox = MessageBox()
