@@ -1,11 +1,10 @@
 ### Intro ###
 MessageBox is a simple concept for decoupling entities. Think of it as notifications but lazy.
 
-For example entity A can place a message that entity B can read whenever suitable – not at once like notifications.
+* For example entity A can place a message that entity B can read whenever suitable – not at once like notifications.
+* A view controller would like to talk to another view controller, but you don't want to create a strong or weak relationship.
 
 ![Image of MessageBox-Concept](https://github.com/MKGitHub/MessageBox-Concept/blob/master/MessageBox.png)
-
-
 
 
 ### Example Usage ###
