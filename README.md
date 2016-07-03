@@ -1,7 +1,10 @@
 [![Status](https://img.shields.io/badge/Status-Active doing well & alive-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
 [![Pod](https://img.shields.io/badge/pod-coming soon-yellow.svg)](https://github.com/MKGitHub/MessageBox-Concept)
+
 [![Platform](https://img.shields.io/badge/Platforms-macOS + iOS + tvOS + watchOS-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
-[![Status](https://img.shields.io/badge/Swift Version-3 beta 1-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
+[![Swift](https://img.shields.io/badge/Swift Version-3 beta 1-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
+[![Version](https://img.shields.io/badge/Version-1.0.2-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
+
 
 ### Intro ###
 MessageBox is a simple concept for decoupling entities. Think of it as notifications but lazy.
