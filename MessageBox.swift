@@ -18,16 +18,16 @@ import Foundation
 /*
     Example Usage:
 
-    private let mMessageBox:MessageBox = MessageBox()
- 
-     // put message
-     mMessageBox.set(object:"TestObject1", key:"TestKey1")
+    private let box:MessageBox = MessageBox()
 
-     // get message, don't remove
-     let someObject:String = mMessageBox.get(objectForKey:"TestKey1", removeObject:no)
+    // put message
+    box.set(object:"TestObject1", key:"TestKey1")
 
-     // get message, remove
-     let someObject:String = mMessageBox.get(objectForKey:"TestKey1", removeObject:yes)
+    // get message, don't remove so that we or someone else can still retrieve it later
+    let someObject:String = box.get(objectForKey:"TestKey1", removeObject:no)
+
+    // get message, remove
+    let someObject:String = box.get(objectForKey:"TestKey1", removeObject:yes)
 */
 
 
