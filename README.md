@@ -9,6 +9,7 @@ For example entity A can place a message that entity B can read whenever suitabl
 
 
 ### Example Usage ###
+   ```swift
     private let box:MessageBox = MessageBox()
 
     // put message
