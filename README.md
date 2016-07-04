@@ -18,7 +18,7 @@ MessageBox is a simple concept for decoupling entities. Think of it as notificat
 
 
 ### Example Usage ###
-   ```swift
+    ```swift
     private let box:MessageBox = MessageBox()
 
     // put message
@@ -29,7 +29,8 @@ MessageBox is a simple concept for decoupling entities. Think of it as notificat
 
     // get message, remove
     let someObject:String = box.get(objectForKey:"TestKey1", removeObject:yes)
-   ```
+    ```
+
 
 ---
 
