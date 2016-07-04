@@ -6,7 +6,9 @@
 [![Swift](https://img.shields.io/badge/Swift Version-3 beta 1-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
 
 
-### Intro ###
+MessageBox Concept
+------
+
 MessageBox is a simple concept for decoupling entities. Think of it as notifications but the opposite.
 
 * For example entity A can place a message that entity B can read whenever suitable – not at once like notifications.
@@ -27,3 +29,16 @@ MessageBox is a simple concept for decoupling entities. Think of it as notificat
 
     // get message, remove
     let someObject:String = box.get(objectForKey:"TestKey1", removeObject:yes)
+   ```
+
+---
+
+   https://github.com/MKGitHub/MessageBox-Concept
+
+   http://www.xybernic.com
+
+   http://www.khanofsweden.com
+
+   Copyright 2016 Mohsan Khan
+
+   Licensed under the Apache License, Version 2.0.
