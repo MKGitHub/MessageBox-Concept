@@ -18,18 +18,18 @@ MessageBox is a simple concept for decoupling entities. Think of it as notificat
 
 
 ### Example Usage ###
-    ```swift
-    private let box:MessageBox = MessageBox()
+```swift
+private let box:MessageBox = MessageBox()
 
-    // put message
-    box.set(object:"TestObject1", key:"TestKey1")
+// put message
+box.set(object:"TestObject1", key:"TestKey1")
 
-    // get message, don't remove so that we or someone else can still retrieve it later
-    let someObject:String = box.get(objectForKey:"TestKey1", removeObject:no)
+// get message, don't remove so that we or someone else can still retrieve it later
+let someObject:String = box.get(objectForKey:"TestKey1", removeObject:no)
 
-    // get message, remove
-    let someObject:String = box.get(objectForKey:"TestKey1", removeObject:yes)
-    ```
+// get message, remove
+let someObject:String = box.get(objectForKey:"TestKey1", removeObject:yes)
+```
 
 
 ---
