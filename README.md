@@ -8,7 +8,6 @@
 
 MessageBox Concept
 ------
-
 MessageBox is a simple concept for decoupling entities. Think of it as notifications but the opposite.
 
 * For example entity A can place a message that entity B can read whenever suitable – not at once like notifications.
@@ -17,7 +16,8 @@ MessageBox is a simple concept for decoupling entities. Think of it as notificat
 ![Image of MessageBox-Concept](https://github.com/MKGitHub/MessageBox-Concept/blob/master/MessageBox.png)
 
 
-### Example Usage ###
+Example Usage
+------
 ```swift
 private let box:MessageBox = MessageBox()
 
@@ -32,8 +32,8 @@ let someObject:String = box.get(objectForKey:"TestKey1", removeObject:yes)
 ```
 
 
----
-
+Notes
+------
    https://github.com/MKGitHub/MessageBox-Concept
 
    http://www.xybernic.com
@@ -43,3 +43,4 @@ let someObject:String = box.get(objectForKey:"TestKey1", removeObject:yes)
    Copyright 2016 Mohsan Khan
 
    Licensed under the Apache License, Version 2.0.
+
