@@ -30,7 +30,7 @@
 
 /*
     GitHub Notes
-    Swift Version: 3 beta 1
+    Swift Version: 3 beta 6
     URL: https://github.com/MKGitHub/MessageBox-Concept
 */
 
