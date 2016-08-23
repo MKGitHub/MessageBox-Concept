@@ -1,11 +1,12 @@
 //
 //  MessageBox.swift
-//  version 1.0.2
+//  version 1.0.3
+//
+//  Swift Version: 3 beta 6
 //
 //  Created by Mohsan Khan on 2016-03-27.
 //  Copyright © 2016 Mohsan Khan. All rights reserved.
 //
-
 
 //
 //  https://github.com/MKGitHub/MessageBox-Concept
@@ -28,53 +29,47 @@
 //
 
 
-/*
-    GitHub Notes
-    Swift Version: 3 beta 6
-    URL: https://github.com/MKGitHub/MessageBox-Concept
-*/
-
 import Foundation
 
 
-/*
+/**
     Example Usage:
 
-    private let box:MessageBox = MessageBox()
+    ```swift
+
+    let messageBox:MessageBox = MessageBox()
 
     // put message
-    box.set(object:"TestObject1", key:"TestKey1")
+    messageBox.set(object:"TestObject1", key:"TestKey1")
 
-    // get message, don't remove so that we or someone else can still retrieve it later
-    let someObject:String = box.get(objectForKey:"TestKey1", removeObject:no)
+    // get message, but don't remove it – so that we or someone else can still retrieve it later
+    let someObject:String = messageBox.get(objectForKey:"TestKey1", removeObject:no)
 
-    // get message, remove
-    let someObject:String = box.get(objectForKey:"TestKey1", removeObject:yes)
+    // get message, and remove it
+    let someObject:String = messageBox.get(objectForKey:"TestKey1", removeObject:yes)
 */
-
-
 final class MessageBox
 {
     // MARK: Private Member
-    private var mMessageDictionary:Dictionary<String, AnyObject> = Dictionary<String, AnyObject>()
+    fileprivate var mMessageDictionary:Dictionary<String, Any> = Dictionary<String, Any>()
 
 
     // MARK:- Public Methods
 
 
-    func set(object:AnyObject, key:String)
+    func set(object:Any, key:String)
     {
         mMessageDictionary[key] = object
     }
 
 
     ///
-    /// Returns `nil` if the object does not exist.
+    /// - returns: `nil` if the object does not exist.
     ///
     func get(objectForKey key:String, removeObject:Bool)
-    -> AnyObject?
+    -> Any?
     {
-        let obj:AnyObject? = mMessageDictionary[key]
+        let obj:Any? = mMessageDictionary[key]
 
         if (removeObject) {
             mMessageDictionary.removeValue(forKey:key)
