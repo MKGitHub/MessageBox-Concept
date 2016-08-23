@@ -1,10 +1,5 @@
 //
-//  MessageBox.swift
-//  version 1.0.3
-//
-//  Swift Version: 3 beta 6
-//
-//  Created by Mohsan Khan on 2016-03-27.
+//  MessageBox
 //  Copyright © 2016 Mohsan Khan. All rights reserved.
 //
 
@@ -12,6 +7,8 @@
 //  https://github.com/MKGitHub/MessageBox-Concept
 //  http://www.xybernic.com
 //  http://www.khanofsweden.com
+//
+
 //
 //  Copyright 2016 Mohsan Khan
 //
@@ -27,7 +24,6 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
-
 
 import Foundation
 
