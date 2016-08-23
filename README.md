@@ -1,5 +1,5 @@
 [![Status](https://img.shields.io/badge/Status-Active doing well & alive-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
-[![Version](https://img.shields.io/badge/Version-1.0.2-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
+[![Version](https://img.shields.io/badge/Version-1.0.3-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
 [![Pod](https://img.shields.io/badge/pod-1.0.2-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
 
 [![Platform](https://img.shields.io/badge/Platforms-macOS + iOS + tvOS + watchOS-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
@@ -19,16 +19,16 @@ MessageBox is a simple concept for decoupling entities. Think of it as notificat
 Example Usage
 ------
 ```swift
-private let box:MessageBox = MessageBox()
+let messageBox:MessageBox = MessageBox()
 
 // put message
-box.set(object:"TestObject1", key:"TestKey1")
+messageBox.set(object:"TestObject1", key:"TestKey1")
 
-// get message, don't remove so that we or someone else can still retrieve it later
-let someObject:String = box.get(objectForKey:"TestKey1", removeObject:no)
+// get message, but don't remove it – so that we or someone else can still retrieve it later
+let someObject:String = messageBox.get(objectForKey:"TestKey1", removeObject:no)
 
-// get message, remove
-let someObject:String = box.get(objectForKey:"TestKey1", removeObject:yes)
+// get message, and remove it
+let someObject:String = messageBox.get(objectForKey:"TestKey1", removeObject:yes)
 ```
 
 
