@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MessageBox"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "MessageBox is a simple concept for decoupling entities. Think of it as notifications but the opposite."
 
   s.description  = <<-DESC
