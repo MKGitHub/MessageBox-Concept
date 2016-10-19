@@ -34,6 +34,11 @@ let someObject:String = messageBox.get(objectForKey:"TestKey1", removeObject:yes
 ```
 
 
+Used By
+------
+[McDonald's Sweden](https://itunes.apple.com/se/app/mcdonalds-sverige/id322810359?mt=8)
+
+
 Notes
 ------
    https://github.com/MKGitHub/MessageBox-Concept
