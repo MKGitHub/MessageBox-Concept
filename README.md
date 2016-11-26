@@ -1,11 +1,11 @@
 [![MadeInSweden](https://img.shields.io/badge/Made In-Stockholm, Sweden-blue.svg)](https://en.wikipedia.org/wiki/Stockholm)
 
 [![Status](https://img.shields.io/badge/Status-Active doing well & alive-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
-[![Version](https://img.shields.io/badge/Version-1.0.4-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
-[![Pod](https://img.shields.io/badge/pod-1.0.4-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
+[![Version](https://img.shields.io/badge/Version-1.1.0-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
+[![Pod](https://img.shields.io/badge/pod-1.1.0-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
 
 [![Platform](https://img.shields.io/badge/Platforms-macOS + iOS + tvOS + watchOS-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
-[![Swift](https://img.shields.io/badge/Swift Version-3.0-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
+[![Swift](https://img.shields.io/badge/Swift Version-3.0.1-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
 
 
 MessageBox Concept
@@ -18,19 +18,21 @@ MessageBox is a simple concept for decoupling entities. Think of it as notificat
 ![Image of MessageBox-Concept](https://github.com/MKGitHub/MessageBox-Concept/blob/master/MessageBox.png)
 
 
-Example Usage
+Simple Example Usage
 ------
 ```swift
 let messageBox:MessageBox = MessageBox()
 
-// put message
-messageBox.set(object:"TestObject1", key:"TestKey1")
+// set
+messageBox.setObject("TestObject1", forKey:"TestKey1")
 
-// get message, but don't remove it – so that we or someone else can still retrieve it later
-let someObject:String = messageBox.get(objectForKey:"TestKey1", removeObject:no)
+// get
+// but don't remove it, keep it stored, so that it can still be retrieved later
+let someObject:String = messageBox.getObject(forKey:"TestKey1", removeIfFound:false)
 
-// get message, and remove it
-let someObject:String = messageBox.get(objectForKey:"TestKey1", removeObject:yes)
+// get
+// and remove it
+let someObject:String = messageBox.getObject(forKey:"TestKey1", removeIfFound:true)
 ```
 
 

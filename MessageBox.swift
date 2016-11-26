@@ -29,20 +29,22 @@ import Foundation
 
 
 /**
-    Example Usage:
+    Simple Example Usage:
 
     ```swift
 
     let messageBox:MessageBox = MessageBox()
 
-    // put message
-    messageBox.set(object:"TestObject1", key:"TestKey1")
+    // set
+    messageBox.setObject("TestObject1", forKey:"TestKey1")
 
-    // get message, but don't remove it – so that we or someone else can still retrieve it later
-    let someObject:String = messageBox.get(objectForKey:"TestKey1", removeObject:no)
+    // get
+    // but don't remove it, keep it stored, so that it can still be retrieved later
+    let someObject:String = messageBox.getObject(forKey:"TestKey1", removeIfFound:false)
 
-    // get message, and remove it
-    let someObject:String = messageBox.get(objectForKey:"TestKey1", removeObject:yes)
+    // get
+    // and remove it
+    let someObject:String = messageBox.getObject(forKey:"TestKey1", removeIfFound:true)
 */
 final class MessageBox
 {
@@ -53,7 +55,7 @@ final class MessageBox
     // MARK:- Public Methods
 
 
-    func set(object:Any, key:String)
+    func setObject(_ object:Any, forKey key:String)
     {
         mMessageDictionary[key] = object
     }
@@ -62,16 +64,53 @@ final class MessageBox
     ///
     /// - returns: `nil` if the object does not exist.
     ///
-    func get(objectForKey key:String, removeObject:Bool)
+    func getObject(forKey key:String, removeIfFound:Bool)
     -> Any?
     {
         let obj:Any? = mMessageDictionary[key]
 
-        if (removeObject) {
+        if (removeIfFound) {
             mMessageDictionary.removeValue(forKey:key)
         }
 
         return obj
+    }
+
+
+    func containsObject(forKey key:String)
+    -> Bool
+    {
+        if (mMessageDictionary[key] != nil) {
+            return true
+        }
+
+        return false
+    }
+
+
+    func count()
+    -> Int
+    {
+        return mMessageDictionary.count
+    }
+
+
+    ///
+    /// Remove all messages in the box.
+    ///
+    func removeAll()
+    {
+        mMessageDictionary.removeAll()
+    }
+
+
+    ///
+    /// Returns the underlaying dictionary.
+    ///
+    func dictionary()
+    -> Dictionary<String, Any>
+    {
+        return mMessageDictionary
     }
 }
 
