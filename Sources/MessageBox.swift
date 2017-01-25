@@ -1,6 +1,6 @@
 //
 //  MessageBox
-//  Copyright © 2016 Mohsan Khan. All rights reserved.
+//  Copyright © 2016/2017 Mohsan Khan. All rights reserved.
 //
 
 //
@@ -10,7 +10,7 @@
 //
 
 //
-//  Copyright 2016 Mohsan Khan
+//  Copyright 2016/2017 Mohsan Khan
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -55,6 +55,13 @@ final class MessageBox
     // MARK:- Public Methods
 
 
+    ///
+    /// Set the object for the key.
+    ///
+    /// - Parameters:
+    ///   - object: An object.
+    ///   - key: A key name.
+    ///
     func setObject(_ object:Any, forKey key:String)
     {
         mMessageDictionary[key] = object
@@ -62,7 +69,12 @@ final class MessageBox
 
 
     ///
-    /// - returns: `nil` if the object does not exist.
+    /// Get the object for the key.
+    ///
+    /// - Parameters:
+    ///   - key: A key name.
+    ///   - removeIfFound: If the object is found then remove it upon retrieval. Otherwise let it remain.
+    /// - Returns: The found object, or `nil` if the object does not exist.
     ///
     func getObject(forKey key:String, removeIfFound:Bool)
     -> Any?
@@ -77,6 +89,12 @@ final class MessageBox
     }
 
 
+    ///
+    /// Check if an object exists for a key.
+    ///
+    /// - Parameter key: A key name.
+    /// - Returns: `true` or `false`
+    ///
     func containsObject(forKey key:String)
     -> Bool
     {
@@ -88,6 +106,11 @@ final class MessageBox
     }
 
 
+    ///
+    /// The number of messages in the box.
+    ///
+    /// - Returns: The number of messages in the box.
+    ///
     func count()
     -> Int
     {
@@ -106,6 +129,8 @@ final class MessageBox
 
     ///
     /// Returns the underlaying dictionary.
+    ///
+    /// - Returns: Returns the underlaying dictionary.
     ///
     func dictionary()
     -> Dictionary<String, Any>
