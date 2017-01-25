@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MessageBox"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "MessageBox is a simple concept for decoupling entities. Think of it as notifications but the opposite."
 
   s.description  = <<-DESC
@@ -24,7 +24,7 @@ DESC
 
   s.source       = { :git => "https://github.com/MKGitHub/MessageBox-Concept.git", :tag => "#{s.version}" }
 
-  s.source_files  = "", "MessageBox.swift"
+  s.source_files  = "Sources/MessageBox.swift"
 
   s.requires_arc = true
 
