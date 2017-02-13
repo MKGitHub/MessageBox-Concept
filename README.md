@@ -10,6 +10,9 @@
 [![Swift](https://img.shields.io/badge/Swift Version-3.0.1-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
 
 
+★ Give this repo a star and help its development grow! ★
+
+
 MessageBox Concept
 ------
 MessageBox is a simple concept for decoupling entities. Think of it as notifications but the opposite.
