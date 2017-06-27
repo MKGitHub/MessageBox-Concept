@@ -7,7 +7,7 @@
 [![Pod](https://img.shields.io/badge/pod-1.1.1-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
 
 [![Platform](https://img.shields.io/badge/Platforms-macOS_iOS_tvOS-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
-[![Swift](https://img.shields.io/badge/Swift_Version-3.0.1/3.1-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
+[![Swift](https://img.shields.io/badge/Swift_Version-3.0.1/3.1/4-blue.svg)](https://github.com/MKGitHub/MessageBox-Concept)
 
 
 ★ Give this repo a star and help its development grow! ★
@@ -48,7 +48,7 @@ What’s New?
 
 Requirements
 ------
-* Swift Version 3.0.1
+* Swift Version 3.0.1 / 3.1 / 4
 * ARC
 * macOS 10.11 and later
 * iOS 9.0 and later
@@ -74,8 +74,7 @@ Used In Apps
 ------
 MessageBox is used in production in the following apps/games (known to me), these apps are together used by many millions of users every day. Please let me know if you use MessageBox.
 
-* McDonald's Sweden
-* McDonald's Switzerland
+* McDonald's: Sweden, Switzerland and more
 
 
 Notes
